@@ -1,0 +1,98 @@
+.text-field {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    color: black;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.text-field.underline-style .input-container {
+    border-bottom: 1px solid #ccc;
+}
+
+.text-field.underline-style.focused .input-container {
+    border-bottom: 2px solid #6C77A7;
+}
+
+.text-field.border-style .input-container {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+.text-field.border-style.focused .input-container {
+    border: 1px solid #6C77A7;
+}
+
+.text-field.error .input-container {
+    border-color: #f44336 !important;
+}
+
+.input-container input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px 0;
+    font-size: 16px;
+    background: transparent;
+    color: black;
+}
+
+.clear-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #999;
+    padding: 0;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-button.inside {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-button.outside {
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.send-button img {
+    width: 16px;
+    height: 16px;
+}
+
+.error-message {
+    position: absolute;
+    color: #f44336;
+    font-size: 12px;
+    bottom: -20px;
+    left: 0;
+}
